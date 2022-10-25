@@ -15,4 +15,5 @@ int main(){
     else{
         cout<<"compsite";
     }
+    return 0;
 }
