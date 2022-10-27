@@ -1,19 +1,28 @@
 #include<iostream>
 using namespace std;
-int main(){
-    int a,count=0;
-    cin>>a;
-    for (int i=2; i<a; i++){
-        if(a%i==0){
-            count++;
+int main()
+{
+        int num, i, count=0;
 
+        cout<<"\n Enter Number : ";
+        cin>>num;
+
+        for(i=2;i<num;i++)
+        {
+                if(num%i==0)
+                {
+                        count++;
+                        break;
+                }
         }
-    }
-    if(count==0){
-        cout<<"prime";
-    }
-    else{
-        cout<<"compsite";
-    }
-    return 0;
+        if(count==0)
+        {
+                cout<<"\n Prime Number";
+        }
+        else
+        {
+                cout<<" \n Not a Prime Number";
+        }        
+        return 0;
 }
+
